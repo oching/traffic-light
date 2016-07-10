@@ -1,0 +1,18 @@
+{
+  "name": "traffic-light",
+  "version": "0.0.1",
+  "description": "Simulation of traffic lights at an intersection",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oching/traffic-light.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deng Ching-Mallete",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
