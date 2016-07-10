@@ -25,26 +25,38 @@ describe('Intersection', function() {
   it('should have North/South in RED at 2 minutes', function() {
     var intersection = new Intersection();
 
-    expect(intersection.showTrafficLightState('North/South', 2, 0)).to.equal("RED")
+    expect(intersection.showTrafficLightState('North/South', 2, 0)).to.equal("RED");
   });
 
   it('should have East/West in GREEN at 2 minutes', function() {
     var intersection = new Intersection();
 
-    expect(intersection.showTrafficLightState('East/West', 2, 0)).to.equal("GREEN")
+    expect(intersection.showTrafficLightState('East/West', 2, 0)).to.equal("GREEN");
   });
 
   it('should have North/South in GREEN at 5 minutes', function() {
     var intersection = new Intersection();
         
-    expect(intersection.showTrafficLightState('North/South', 5, 0)).to.equal("GREEN")
+    expect(intersection.showTrafficLightState('North/South', 5, 0)).to.equal("GREEN");
   });
 
   it('should have East/West in RED at 5 minutes', function() {
     var intersection = new Intersection();
 
-    expect(intersection.showTrafficLightState('East/West', 5, 0)).to.equal("RED")
+    expect(intersection.showTrafficLightState('East/West', 5, 0)).to.equal("RED");
   }); 
+
+  it('should have North/South in RED at 10 minutes', function() {
+    var intersection = new Intersection();
+
+    expect(intersection.showTrafficLightState('North/South', 10, 0)).to.equal("RED");
+  });
+
+  it('should have East/West in GREEN at 10 minutes', function() {
+    var intersection = new Intersection();
+
+    expect(intersection.showTrafficLightState('East/West', 10, 0)).to.equal("GREEN");
+  });
 
 });
 
