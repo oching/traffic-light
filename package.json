@@ -8,7 +8,7 @@
     "url": "https://github.com/oching/traffic-light.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "author": "Deng Ching-Mallete",
   "devDependencies": {
