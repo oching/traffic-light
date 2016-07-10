@@ -2,7 +2,7 @@
   "name": "traffic-light",
   "version": "0.0.1",
   "description": "Simulation of traffic lights at an intersection",
-  "main": "index.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/oching/traffic-light.git"
