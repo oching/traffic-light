@@ -14,7 +14,7 @@ describe('Intersection', function() {
     expect(northSouthTrafficLight.state).to.equal("RED");
   });  
 
-   it('should have East/West in GREEN as initial state', function() {
+  it('should have East/West in GREEN as initial state', function() {
     var intersection = new Intersection();
     var eastWestTrafficLight = intersection._trafficLights[1];
 
@@ -22,6 +22,29 @@ describe('Intersection', function() {
     expect(eastWestTrafficLight.state).to.equal("GREEN");
   });
 
+  it('should have North/South in RED at 2 minutes', function() {
+    var intersection = new Intersection();
+
+    expect(intersection.showTrafficLightState('North/South', 2, 0)).to.equal("RED")
+  });
+
+  it('should have East/West in GREEN at 2 minutes', function() {
+    var intersection = new Intersection();
+
+    expect(intersection.showTrafficLightState('East/West', 2, 0)).to.equal("GREEN")
+  });
+
+  it('should have North/South in GREEN at 5 minutes', function() {
+    var intersection = new Intersection();
+        
+    expect(intersection.showTrafficLightState('North/South', 5, 0)).to.equal("GREEN")
+  });
+
+  it('should have East/West in RED at 5 minutes', function() {
+    var intersection = new Intersection();
+
+    expect(intersection.showTrafficLightState('East/West', 5, 0)).to.equal("RED")
+  }); 
 
 });
 
