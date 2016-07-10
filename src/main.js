@@ -1,6 +1,7 @@
-var intersection = require('./intersection').Intersection;
-var NS_DIRECTION = require('./intersection').NS_DIRECTION;
-var EW_DIRECTION = require('./intersection').EW_DIRECTION;
+var intersectionJs = require('./intersection');
+var intersection = intersectionJs.Intersection;
+var NS_DIRECTION = intersectionJs.NS_DIRECTION;
+var EW_DIRECTION = intersectionJs.EW_DIRECTION;
 
 function toString(second) {
   if (second < 10) return "0" + second; 
@@ -23,6 +24,7 @@ while(minute <= 30) {
   minute = minute + 5;
 }
 
+// comment out if more verbose logging is desired
 /*
 console.log("\n\n\n***** Display traffic light every second *******");
 for (min = 0; min <= 30; min++) {
