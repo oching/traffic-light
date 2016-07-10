@@ -55,7 +55,7 @@ Intersection.prototype.showTrafficLightState = function(direction, minute, secon
       }
     }
   } 
-  return "";
+  return "No traffic light at specified direction.";
 }
 
 exports.Intersection = new Intersection();

@@ -82,5 +82,9 @@ describe('Intersection', function() {
      expect(intersection.showTrafficLightState(EW_DIRECTION, 29, 59)).to.equal(RED);
   });
 
+  it('should return a message if there is no traffic light at specified direction', function() {
+     expect(intersection.showTrafficLightState("Southwest", 5, 0)).to.equal("No traffic light at specified direction.");
+  });
+
 });
 
