@@ -9,12 +9,17 @@ function Intersection() {
 }
 
 function getState(initialState, minute, second) {
-  if (minute%5 == 0 && minute%2 != 0 && second == 0) {
+  if (shouldSwitchState(minute, second)) {
     if (initialState == RED) return GREEN;
     else return RED;
   } else {
     return initialState;
   }
+}
+
+function shouldSwitchState(minute, second) {
+  if (minute%5 == 0 && minute%2 != 0 && second == 0) return true;
+  else return false;
 }
 
 function isPossiblyYellow(minute, second) {
